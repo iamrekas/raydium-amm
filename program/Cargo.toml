@@ -22,12 +22,12 @@ name = "raydium_amm"
 crate-type = ["cdylib", "lib"]
 
 [dependencies]
-solana-program = "=2.1.0"
+solana-program = "=2.2.1"
 spl-token = { version = "=7.0.0", features = ["no-entrypoint"] }
 spl-associated-token-account = { version = "6.0.0", features = [
     "no-entrypoint",
 ] }
-serum_dex = { version = "0.5.10", git = "https://github.com/raydium-io/openbook-dex", features = [
+serum_dex = { branch = "master", git = "https://github.com/iamrekas/openbook-dex", features = [
     "no-entrypoint",
     "program",
 ] }
